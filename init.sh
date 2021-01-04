@@ -1,5 +1,5 @@
-sudo passwd root
-su root
+#sudo passwd root
+#su root
 
 #####allow root login
 #nano /etc/ssh/sshd_config
@@ -15,12 +15,12 @@ sudo apt install openssh-server
 echo Install google chrome
 cd /home/calvin/Downloads
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb -y
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 echo install VS Code
 cd /home/calvin/Downloads
 wget https://az764295.vo.msecnd.net/stable/ea3859d4ba2f3e577a159bc91e3074c5d85c0523/code_1.52.1-1608136922_amd64.deb
-sudo dpkg -i code_1.52.1-1608136922_amd64.deb -y
+sudo dpkg -i code_1.52.1-1608136922_amd64.deb
 
 echo install golang
 cd /home/calvin/Downloads
