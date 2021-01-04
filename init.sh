@@ -47,7 +47,7 @@ cd /home/calvin/Downloads
 sudo apt install virtualbox
 wget https://dl.genymotion.com/releases/genymotion-3.1.2/genymotion-3.1.2-linux_x64.bin
 chmod +x /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin
-sudo /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin
+sudo /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin -y
 
 echo email client
 sudo snap install mailspring
