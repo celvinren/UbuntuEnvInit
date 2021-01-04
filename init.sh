@@ -45,7 +45,7 @@ flutter --version
 dart --version
 
 echo install snap
-sudo apt install snapd
+sudo apt install snapd -y
 
 echo install virtualbox and genymotion emulator
 cd /home/calvin/Downloads
