@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #sudo passwd root
 #su root
 
@@ -27,7 +29,7 @@ echo install golang
 cd /home/calvin/Downloads
 wget https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
-setenv PATH $PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin
 
 echo install git and gcc
 sudo apt install git -y
@@ -37,7 +39,7 @@ echo install flutter
 cd /home/calvin/Documents
 wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_1.22.5-stable.tar.xz
 tar xf flutter_linux_1.22.5-stable.tar.xz
-setenv PATH $PATH:/home/calvin/Documents/flutter/bin
+export PATH=$PATH:/home/calvin/Documents/flutter/bin
 flutter --version
 flutter --version
 dart --version
