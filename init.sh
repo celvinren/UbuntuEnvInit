@@ -27,7 +27,7 @@ echo install golang
 cd /home/calvin/Downloads
 wget https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
-set path = ($path /usr/local/go/bin)
+set PATH = ($PATH /usr/local/go/bin)
 
 echo install git and gcc
 sudo apt install git -y
@@ -37,7 +37,7 @@ echo install flutter
 cd /home/calvin/Documents
 wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_1.22.5-stable.tar.xz
 tar xf flutter_linux_1.22.5-stable.tar.xz
-set path = ($path /home/calvin/Documents/flutter/bin)
+set PATH = ($PATH /home/calvin/Documents/flutter/bin)
 
 echo install snap
 sudo apt install snapd
