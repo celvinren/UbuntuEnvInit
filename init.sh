@@ -9,8 +9,8 @@
 #StrictModes yes
 
 
-echo install ssh server
-sudo apt install openssh-server
+echo install ssh server 
+sudo apt install openssh-server -y
 sudo apt --fix-broken install -y
 
 echo Install google chrome
