@@ -61,7 +61,7 @@ echo init golang gin framework
 go get -u github.com/gin-gonic/gin
 
 echo install rdp
-sudo apt install xubuntu-desktop
+sudo apt install xubuntu-desktop -y
 sudo apt install xrdp -y
 adduser xrdp ssl-cert
 sudo systemctl restart xrdp
