@@ -55,7 +55,7 @@ chmod +x /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin
 sudo /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin -y
 
 echo install email client
-sudo snap install mailspring -y
+sudo snap install mailspring
 
 echo init golang gin framework
 go get -u github.com/gin-gonic/gin
