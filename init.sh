@@ -60,6 +60,13 @@ sudo snap install mailspring
 echo init golang gin framework
 go get -u github.com/gin-gonic/gin
 
+echo install rdp
+sudo apt install xubuntu-desktop
+sudo apt install xrdp -y
+adduser xrdp ssl-cert
+sudo systemctl restart xrdp
+sudo ufw allow 3389
+
 #go get -u github.com/swaggo/swag/cmd/swag
 #swag init
 
