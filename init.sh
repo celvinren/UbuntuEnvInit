@@ -11,7 +11,7 @@
 
 echo install ssh server
 sudo apt install openssh-server
-sudo apt --fix-broken install
+sudo apt --fix-broken install -y
 
 echo Install google chrome
 cd /home/calvin/Downloads
