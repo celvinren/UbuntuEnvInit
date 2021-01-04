@@ -31,6 +31,9 @@ wget https://dl.genymotion.com/releases/genymotion-3.1.2/genymotion-3.1.2-linux_
 chmod +x /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin
 sudo /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin
 
+email:
+MailSpring
+sudo snap install mailspring
 
 go get -u github.com/swaggo/swag/cmd/swag
 swag init
