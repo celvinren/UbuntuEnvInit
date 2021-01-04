@@ -44,13 +44,13 @@ sudo apt install snapd
 
 echo install virtualbox and genymotion emulator
 cd /home/calvin/Downloads
-sudo apt install virtualbox
+sudo apt install virtualbox -y
 wget https://dl.genymotion.com/releases/genymotion-3.1.2/genymotion-3.1.2-linux_x64.bin
 chmod +x /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin
 sudo /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin -y
 
-echo email client
-sudo snap install mailspring
+echo install email client
+sudo snap install mailspring -y
 
 echo init golang gin framework
 go get -u github.com/gin-gonic/gin
