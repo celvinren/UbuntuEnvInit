@@ -78,7 +78,7 @@ cd ~/Downloads
 sudo apt install openjdk-11-jdk -y
 sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.1.0/android-studio-ide-201.6953283-linux.tar.gz
-unzip -q android-studio-ide-201.6953283-linux.tar.gz -d ~/Downloads/android-studio
+tar -xvzf android-studio-ide-201.6953283-linux.tar.gz -C ~/Downloads/
 sudo mv ~/Downloads/android-studio /usr/local/
 cd /usr/local/android-studio/bin
 ./studio.sh
