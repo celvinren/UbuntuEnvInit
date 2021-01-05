@@ -48,14 +48,13 @@ flutter --version
 echo install snap
 sudo apt install snapd -y
 
-echo install virtualbox and genymotion emulator
+echo install android studio, virtualbox and genymotion emulator
+sudo snap install android-studio --classic
 cd /home/calvin/Downloads
 sudo apt install virtualbox -y
 wget https://dl.genymotion.com/releases/genymotion-3.1.2/genymotion-3.1.2-linux_x64.bin
 chmod +x /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin
 sudo /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin -y
-sudo apt update && sudo apt install android-sdk
-#sdk path in /usr/lib/android-sdk
 
 echo install email client
 sudo snap install mailspring
