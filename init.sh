@@ -74,11 +74,14 @@ echo install postman
 sudo snap install postman
 
 echo install android sdk
+cd ~/Downloads
 sudo apt install openjdk-11-jdk -y
-sudo add-apt-repository ppa:maarten-fonville/android-studio
-sudo apt update
-sudo apt install android-studio -y
-
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.1.0/android-studio-ide-201.6953283-linux.tar.gz
+unzip -q android-studio-ide-201.6953283-linux.tar.gz -d ~/Downloads/android-studio
+sudo mv ~/Downloads/android-studio /usr/local/
+cd /usr/local/android-studio/bin
+./studio.sh
 
 #wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.1.0/android-studio-ide-201.6953283-linux.tar.gz
 
