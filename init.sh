@@ -42,6 +42,7 @@ cd /home/calvin/Documents
 wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_1.22.5-stable.tar.xz
 tar xf flutter_linux_1.22.5-stable.tar.xz
 export PATH=$PATH:/home/calvin/Documents/flutter/bin
+sudo chmod -R a+rwx /home/calvin/Documents/flutter
 flutter --version
 
 echo install snap
