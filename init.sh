@@ -72,7 +72,7 @@ curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
 sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
 chmod +x /usr/local/bin/docker-machine
 
-echi install postman
+echo install postman
 sudo snap install postman
 
 echo verify all install
@@ -80,6 +80,18 @@ flutter --version
 dart --version
 go version
 docker-machine version
+
+#echo install onedrive
+#curl https://rclone.org/install.sh | sudo bash
+#rclone config
+#n
+#onedrive
+#22
+#advanced config ->no
+#auto config ->y
+#1 onedrive personal
+#sh -c "rclone --vfs-cache-mode writes mount onedrive: ~/onedrive"
+
 
 #echo install rdp
 #sudo apt install xubuntu-desktop -y
