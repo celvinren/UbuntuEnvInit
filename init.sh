@@ -55,6 +55,7 @@ wget https://dl.genymotion.com/releases/genymotion-3.1.2/genymotion-3.1.2-linux_
 chmod +x /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin
 sudo /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin -y
 sudo apt update && sudo apt install android-sdk
+#sdk path in /usr/lib/Android-SDK
 
 echo install email client
 sudo snap install mailspring
