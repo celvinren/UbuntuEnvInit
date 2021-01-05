@@ -42,7 +42,7 @@ sudo apt --fix-broken install -y
 sudo apt install snapd -y
 
 echo install flutter
-snap install flutter --classic
+sudo snap install flutter --classic
 export PATH=$PATH:/snap/bin
 flutter --version
 
@@ -77,7 +77,7 @@ echo install android sdk
 sudo apt install openjdk-11-jdk
 sudo add-apt-repository ppa:maarten-fonville/android-studio
 sudo apt update
-sudo apt install android-studio
+sudo apt install android-studio -y
 
 
 #wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.1.0/android-studio-ide-201.6953283-linux.tar.gz
