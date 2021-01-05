@@ -38,6 +38,7 @@ sudo apt install git -y
 sudo apt install gcc -y
 
 echo install snap
+sudo apt --fix-broken install -y
 sudo apt install snapd -y
 
 echo install flutter
