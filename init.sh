@@ -79,6 +79,9 @@ curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
 sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
 chmod +x /usr/local/bin/docker-machine
 
+echi install postman
+sudo snap install postman
+
 echo verify all install
 flutter --version
 dart --version
