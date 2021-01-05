@@ -67,6 +67,12 @@ adduser xrdp ssl-cert
 sudo systemctl restart xrdp
 sudo ufw allow 3389
 
+echo install docker
+sudo apt-get remove -y docker docker-engine docker.io
+sudo apt install -y docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+
 #go get -u github.com/swaggo/swag/cmd/swag
 #swag init
 
