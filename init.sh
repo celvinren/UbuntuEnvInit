@@ -45,9 +45,25 @@ snap install flutter --classic
 export PATH=$PATH:/snap/bin
 flutter --version
 
-echo install android studio, virtualbox and genymotion emulator
-sudo snap install android-studio --classic
+echo install android sdk
+sudo apt-get install default-jre -y
+
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version
+sdk install gradle 6.7.1
+
+sudo apt update && sudo apt install android-sdk
+
 cd /home/calvin/Downloads
+wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
+unzip -q commandlinetools-linux-6858069_latest.zip -d ~/android-sdk
+cd ~/android-sdk
+cmdline-tools/bin/sdkmanager --update
+#tools/bin/sdkmanager "platforms;android-25" "build-tools;25.0.2" "extras;google;m2repository" "extras;android;m2repository"
+cmdline-tools/bin/sdkmanager --licenses --sdk_root=/usr/lib/android-sdk
+
+echo virtualbox and genymotion emulator
 sudo apt install virtualbox -y
 wget https://dl.genymotion.com/releases/genymotion-3.1.2/genymotion-3.1.2-linux_x64.bin
 chmod +x /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin
@@ -79,6 +95,7 @@ flutter --version
 dart --version
 go version
 docker-machine version
+gradle --version
 
 #echo install onedrive
 #curl https://rclone.org/install.sh | sudo bash
