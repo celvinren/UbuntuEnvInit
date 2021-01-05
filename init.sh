@@ -81,7 +81,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
 sdk install gradle 6.7.1
 
-sudo apt update && sudo apt install android-sdk
+sudo apt update && sudo apt install android-sdk -y
 
 cd /home/calvin/Downloads
 wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
