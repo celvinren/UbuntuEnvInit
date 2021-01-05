@@ -10,9 +10,11 @@
 #PermitRootLogin yes
 #StrictModes yes
 
+echo run system update
+sudo apt-get update
+sudo apt --fix-broken install -y
 
 echo install ssh server 
-sudo apt --fix-broken install -y
 sudo apt install openssh-server -y
 
 echo Install google chrome
@@ -78,6 +80,12 @@ base=https://github.com/docker/machine/releases/download/v0.16.0
 curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
 sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
 chmod +x /usr/local/bin/docker-machine
+
+echo verify all install
+flutter --version
+dart --version
+go version
+docker-machine version
 
 #go get -u github.com/swaggo/swag/cmd/swag
 #swag init
