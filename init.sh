@@ -74,22 +74,30 @@ echo install postman
 sudo snap install postman
 
 echo install android sdk
-sudo apt-get install default-jre -y
+sudo apt install openjdk-11-jdk
+sudo add-apt-repository ppa:maarten-fonville/android-studio
+sudo apt update
+sudo apt install android-studio
 
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk version
-sdk install gradle 6.7.1
 
-sudo apt update && sudo apt install android-sdk -y
+#wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.1.0/android-studio-ide-201.6953283-linux.tar.gz
 
-cd /home/calvin/Downloads
-wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
-unzip -q commandlinetools-linux-6858069_latest.zip -d ~/android-sdk
-cd ~/android-sdk
-cmdline-tools/bin/sdkmanager --update
-cmdline-tools/bin/sdkmanager "platforms;android-29" "build-tools;28.0.3" "extras;google;m2repository" "extras;android;m2repository" --sdk_root=/usr/lib/android-sdk
-cmdline-tools/bin/sdkmanager --licenses --sdk_root=/usr/lib/android-sdk
+#sudo apt-get install default-jre -y
+
+#curl -s "https://get.sdkman.io" | bash
+#source "$HOME/.sdkman/bin/sdkman-init.sh"
+#sdk version
+#sdk install gradle 6.7.1
+
+#sudo apt update && sudo apt install android-sdk -y
+
+#cd /home/calvin/Downloads
+#wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
+#unzip -q commandlinetools-linux-6858069_latest.zip -d ~/android-sdk
+#cd ~/android-sdk
+#cmdline-tools/bin/sdkmanager --update
+#cmdline-tools/bin/sdkmanager "platforms;android-29" "build-tools;28.0.3" "extras;google;m2repository" "extras;android;m2repository" --sdk_root=/usr/lib/android-sdk
+#cmdline-tools/bin/sdkmanager --licenses --sdk_root=/usr/lib/android-sdk
 
 echo verify all install
 flutter --version
