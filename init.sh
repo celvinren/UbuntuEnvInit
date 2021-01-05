@@ -21,6 +21,7 @@ echo Install google chrome
 cd /home/calvin/Downloads
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt --fix-broken install -y
 
 echo install VS Code
 cd /home/calvin/Downloads
@@ -82,6 +83,8 @@ tar -xvzf android-studio-ide-201.6953283-linux.tar.gz -C ~/Downloads/
 sudo mv ~/Downloads/android-studio /usr/local/
 cd /usr/local/android-studio/bin
 ./studio.sh
+#1. install sdk
+#2. tick command-line tools in config->sdk manager
 
 #wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.1.0/android-studio-ide-201.6953283-linux.tar.gz
 
