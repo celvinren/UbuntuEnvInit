@@ -74,7 +74,7 @@ echo install postman
 sudo snap install postman
 
 echo install android sdk
-sudo apt install openjdk-11-jdk
+sudo apt install openjdk-11-jdk -y
 sudo add-apt-repository ppa:maarten-fonville/android-studio
 sudo apt update
 sudo apt install android-studio -y
