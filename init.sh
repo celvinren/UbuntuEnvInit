@@ -30,23 +30,20 @@ sudo dpkg -i code_1.52.1-1608136922_amd64.deb
 echo install golang
 cd /home/calvin/Downloads
 wget https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
 echo install git and gcc
 sudo apt install git -y
 sudo apt install gcc -y
 
-echo install flutter
-cd /home/calvin/Documents
-wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_1.22.5-stable.tar.xz
-tar xf flutter_linux_1.22.5-stable.tar.xz
-export PATH=$PATH:/home/calvin/Documents/flutter/bin
-sudo chmod -R a+rwx /home/calvin/Documents/flutter
-flutter --version
-
 echo install snap
 sudo apt install snapd -y
+
+echo install flutter
+snap install flutter --classic
+export PATH=$PATH:/snap/bin
+flutter --version
 
 echo install android studio, virtualbox and genymotion emulator
 sudo snap install android-studio --classic
