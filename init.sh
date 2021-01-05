@@ -97,6 +97,7 @@ dart --version
 go version
 docker-machine version
 gradle --version
+echo android-sdk in /usr/lib/android-sdk
 
 #echo install onedrive
 #curl https://rclone.org/install.sh | sudo bash
