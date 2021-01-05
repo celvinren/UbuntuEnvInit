@@ -88,7 +88,7 @@ wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_lat
 unzip -q commandlinetools-linux-6858069_latest.zip -d ~/android-sdk
 cd ~/android-sdk
 cmdline-tools/bin/sdkmanager --update
-#tools/bin/sdkmanager "platforms;android-25" "build-tools;25.0.2" "extras;google;m2repository" "extras;android;m2repository"
+cmdline-tools/bin/sdkmanager "platforms;android-29" "build-tools;28.0.3" "extras;google;m2repository" "extras;android;m2repository" --sdk_root=/usr/lib/android-sdk
 cmdline-tools/bin/sdkmanager --licenses --sdk_root=/usr/lib/android-sdk
 
 echo verify all install
