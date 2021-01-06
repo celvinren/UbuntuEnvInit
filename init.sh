@@ -106,6 +106,7 @@ cd /usr/local/android-studio/bin
 #cmdline-tools/bin/sdkmanager --licenses --sdk_root=/usr/lib/android-sdk
 
 echo verify all install
+sudo chmod -R 777 ~/go
 flutter --version
 dart --version
 go version
