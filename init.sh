@@ -14,14 +14,15 @@ echo run system update
 sudo apt-get update
 sudo apt --fix-broken install -y
 
-echo install ssh server 
-sudo apt install openssh-server -y
+#echo install ssh server 
+#sudo apt install openssh-server -y
 
 echo Install google chrome
 cd /home/calvin/Downloads
+sudo apt install fonts-liberation
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
-sudo apt --fix-broken install -y
+#sudo apt --fix-broken install -y
 
 echo install VS Code
 cd /home/calvin/Downloads
@@ -36,10 +37,10 @@ export PATH=$PATH:/usr/local/go/bin
 
 echo install git and gcc
 sudo apt install git -y
-sudo apt install gcc -y
+#sudo apt install gcc -y
 
 echo install snap
-sudo apt --fix-broken install -y
+#sudo apt --fix-broken install -y
 sudo apt install snapd -y
 
 echo install flutter
@@ -48,13 +49,17 @@ export PATH=$PATH:/snap/bin
 flutter --version
 
 echo virtualbox and genymotion emulator
-sudo apt install virtualbox -y
+wget https://download.virtualbox.org/virtualbox/6.1.16/virtualbox-6.1_6.1.16-140961~Debian~buster_amd64.deb
+sudo dpkg -i virtualbox-6.1_6.1.16-140961~Debian~buster_amd64.deb
 wget https://dl.genymotion.com/releases/genymotion-3.1.2/genymotion-3.1.2-linux_x64.bin
 chmod +x /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin
 sudo /home/calvin/Downloads/genymotion-3.1.2-linux_x64.bin -y
 
 echo install email client
-sudo snap install mailspring
+cd ~/Downloads
+sudo apt-get install libsecret-1-dev gconf2 gconf-service
+wget https://updates.getmailspring.com/download?platform=linuxDeb -O mailspring.deb
+sudo dpkg -i mailspring.deb
 
 echo init golang gin framework
 go get -u github.com/gin-gonic/gin
@@ -66,13 +71,17 @@ sudo systemctl start docker
 sudo systemctl enable docker
 
 echo install docker machine
+sudo apt-get install curl -y
 base=https://github.com/docker/machine/releases/download/v0.16.0
 curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
 sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
 chmod +x /usr/local/bin/docker-machine
 
-echo install postman
-sudo snap install postman
+#echo install postman
+#wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+#sudo tar -xzvf postman.tar.gz -C ~/Downloads/
+#sudo mv ~/Downloads/Postman /usr/local/
+
 
 echo install android sdk
 cd ~/Downloads
@@ -94,12 +103,12 @@ cd /usr/local/android-studio/bin
 #sdk install gradle 6.7.1
 
 
-echo sougo
-sudo apt-get install python-software-properties -y
-sudo apt-get install software-properties-common -y
-sudo add-apt-repository ppa:fcitx-team/nightly
-sudo apt-get update
-sudo apt-get install fcitx fcitx-config-gtk fcitx-googlepinyin
+#echo sougo
+#sudo apt-get install python-software-properties -y
+#sudo apt-get install software-properties-common -y
+#sudo add-apt-repository ppa:fcitx-team/nightly
+#sudo apt-get update
+#sudo apt-get install fcitx fcitx-config-gtk fcitx-googlepinyin
 
 
 echo verify all install
@@ -110,7 +119,8 @@ flutter --version
 dart --version
 go version
 docker-machine version
-gradle --version
+#gradle --version
+/opt/genymobile/genymotion/genymotion
 echo android-sdk in /usr/lib/android-sdk
 
 #echo install onedrive
