@@ -86,24 +86,21 @@ cd /usr/local/android-studio/bin
 #1. install sdk
 #2. tick command-line tools in config->sdk manager
 
-#wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.1.0/android-studio-ide-201.6953283-linux.tar.gz
 
-#sudo apt-get install default-jre -y
 
 #curl -s "https://get.sdkman.io" | bash
 #source "$HOME/.sdkman/bin/sdkman-init.sh"
 #sdk version
 #sdk install gradle 6.7.1
 
-#sudo apt update && sudo apt install android-sdk -y
 
-#cd /home/calvin/Downloads
-#wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
-#unzip -q commandlinetools-linux-6858069_latest.zip -d ~/android-sdk
-#cd ~/android-sdk
-#cmdline-tools/bin/sdkmanager --update
-#cmdline-tools/bin/sdkmanager "platforms;android-29" "build-tools;28.0.3" "extras;google;m2repository" "extras;android;m2repository" --sdk_root=/usr/lib/android-sdk
-#cmdline-tools/bin/sdkmanager --licenses --sdk_root=/usr/lib/android-sdk
+echo sougo
+sudo apt-get install python-software-properties -y
+sudo apt-get install software-properties-common -y
+sudo add-apt-repository ppa:fcitx-team/nightly
+sudo apt-get update
+sudo apt-get install fcitx fcitx-config-gtk fcitx-googlepinyin
+
 
 echo verify all install
 sudo chmod -R 777 ~/go
