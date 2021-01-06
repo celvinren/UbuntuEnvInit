@@ -107,6 +107,8 @@ cd /usr/local/android-studio/bin
 
 echo verify all install
 sudo chmod -R 777 ~/go
+git config --global user.email "celvinren@hotmail.com"
+git config --global user.name "Calvin"
 flutter --version
 dart --version
 go version
