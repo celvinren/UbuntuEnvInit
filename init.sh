@@ -92,6 +92,7 @@ tar -xvzf android-studio-ide-201.6953283-linux.tar.gz -C ~/Downloads/
 sudo mv ~/Downloads/android-studio /usr/local/
 cd /usr/local/android-studio/bin
 ./studio.sh
+flutter config --android-studio-dir="/usr/local/android-studio/"
 #1. install sdk
 #2. tick command-line tools in config->sdk manager
 #https://stackoverflow.com/questions/61993738/flutter-doctor-android-licenses-gives-a-java-error
