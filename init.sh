@@ -94,7 +94,7 @@ cd /usr/local/android-studio/bin
 ./studio.sh
 #1. install sdk
 #2. tick command-line tools in config->sdk manager
-
+#https://stackoverflow.com/questions/61993738/flutter-doctor-android-licenses-gives-a-java-error
 
 
 #curl -s "https://get.sdkman.io" | bash
