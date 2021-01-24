@@ -93,6 +93,7 @@ sudo mv ~/Downloads/android-studio /usr/local/
 cd /usr/local/android-studio/bin
 ./studio.sh
 flutter config --android-studio-dir="/usr/local/android-studio/"
+keytool -list -v -keystore "/home/calvin/.android/debug.keystore" -alias androiddebugkey -storepass android -keypass android
 #1. install sdk
 #2. tick command-line tools in config->sdk manager
 #https://stackoverflow.com/questions/61993738/flutter-doctor-android-licenses-gives-a-java-error
