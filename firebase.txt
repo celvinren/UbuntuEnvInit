@@ -1,0 +1,12 @@
+
+//insatll npm latest version
+curl https://www.npmjs.com/install.sh | sudo sh
+
+//install node
+#https://github.com/nodesource/distributions/blob/master/README.md#debinstall
+sudo npm install -g n
+sudo n latest
+
+//text firebase function node.js project locally
+firebase serve
+
