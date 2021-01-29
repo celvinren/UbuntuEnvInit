@@ -10,6 +10,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 sudo npm install -g n
 sudo n latest
 
+//switch node to version 12
+nvm ls-remote
+nvm install 12.20.1
+
 //text firebase function node.js project locally
 firebase serve
 
