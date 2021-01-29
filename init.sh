@@ -10,6 +10,8 @@
 #PermitRootLogin yes
 #StrictModes yes
 
+#sudo apt install npm
+
 echo run system update
 sudo apt-get update
 sudo apt --fix-broken install -y
