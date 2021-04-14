@@ -13,6 +13,8 @@
 #after dpkg, dependency issue can run the following to install dependency
 #sudo apt-get -f install
 
+# chinese app market
+https://blog.csdn.net/m0_37623485/article/details/110621614
 
 #sudo apt install npm
 
