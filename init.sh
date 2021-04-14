@@ -10,6 +10,10 @@
 #PermitRootLogin yes
 #StrictModes yes
 
+#after dpkg, dependency issue can run the following to install dependency
+#sudo apt-get -f install
+
+
 #sudo apt install npm
 
 echo run system update
