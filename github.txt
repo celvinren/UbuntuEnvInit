@@ -10,3 +10,7 @@ git status
 git commit -m "first commit"
 git remote add origin https://github.com/<yourGitHubAccount>/<yourRepo.git>
 git push -u origin master
+
+
+# use the following to save bitbucket credential to awoid asking password all the time
+git config --global credential.helper cache
