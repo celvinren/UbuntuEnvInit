@@ -1,0 +1,17 @@
+1. Test locally, and write Dockerfile which need be saved in the root path of your project
+image是镜像,container才是运行环境,container是基于镜像运行,docker run [image name]就会创建一个container
+Docker images
+docker container ls
+copy 把文件复制进去image里
+Add 把文件复制进去image里并做解压
+cmd 可以被docker run覆盖就不会再运行
+entrypoint 启动会马上运行的命令，如果是多命令要写.sh文件，别忘了授予权力它可以执行
+workdir
+expose 80 8080 443
+docker exec -it [container name] /bin/bash //container name可以从docker container ls查看
+//-it 代表container运行但进程不会马上退出
+docker build -t [tag name] .
+docker run -it [tag name]
+docker rmi [image name] -f //删除image
+docker pull [image name:tag]
+docker stop [container name] -f
