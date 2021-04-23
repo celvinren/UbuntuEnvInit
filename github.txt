@@ -14,3 +14,4 @@ git push -u origin master
 
 # use the following to save bitbucket credential to awoid asking password all the time
 git config --global credential.helper cache
+git config --global credential.helper "cache --timeout=3600"
