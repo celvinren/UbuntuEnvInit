@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#PATH file
+/etc/paths
+
 #sudo passwd root
 #su root
 
