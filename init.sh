@@ -6,6 +6,12 @@
 #sudo passwd root
 #su root
 
+########
+install brew:
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/calvin/.profile
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 #####allow root login
 #nano /etc/ssh/sshd_config
 #####add in the following lines
