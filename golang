@@ -1,0 +1,6 @@
+go mod init excample.com/hello_world
+go.mod will created.
+you can add dependency in go.mod file
+
+go get
+download all dependency
