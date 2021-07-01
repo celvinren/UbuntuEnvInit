@@ -17,3 +17,14 @@ nvm install 12.20.1
 //text firebase function node.js project locally
 firebase serve
 
+=======================
+firebase login
+firebase init
+You can init emulator, store, firestore, functions (but function only support javasript and typescript)
+firebase emulators: start
+firebase emulators:start --only firestore,auth
+
+for cloud funtions for python except for javascript and typescript
+https://cloud.google.com/functions/docs/running/function-frameworks#functions-local-ff-install-nodejs
+pip install functions-framework
+functions-framework --target my_function
